@@ -42,7 +42,7 @@ Use it from your system flake:
 
     # home-manager
     home.packages = [
-      inputs.cosmic-separator.packages.${pkgs.stdenv.hostPlatform.system}.default
+      inputs.cosmic-applet-separator.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
 
     # or via the overlay: nixpkgs.overlays = [ inputs.cosmic-separator.overlays.default ];
