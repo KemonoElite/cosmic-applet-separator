@@ -1,0 +1,40 @@
+[workspace]
+default-members = ["cosmic-applet-separator"]
+members = ["cosmic-applet-separator"]
+
+resolver = "3"
+
+[workspace.dependencies]
+i18n-embed = { version = "0.16.0", features = [
+    "fluent-system",
+    "desktop-requester",
+] }
+i18n-embed-fl = "0.10"
+libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = [
+    "applet",
+    "applet-token",
+    "dbus-config",
+    "multi-window",
+    "tokio",
+    "wayland",
+    "winit",
+] }
+rust-embed = "8.11.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3.22", features = ["env-filter"] }
+tracing-log = "0.2.0"
+
+[profile.release]
+opt-level = 3
+panic = "abort"
+lto = "thin"
+
+[workspace.metadata.cargo-machete]
+ignored = ["libcosmic"]
+
+[patch."https://github.com/smithay/client-toolkit.git"]
+sctk = { package = "smithay-client-toolkit", version = "0.20.0" }
+
+[patch."https://github.com/pop-os/cosmic-protocols"]
+cosmic-protocols = { git = "https://github.com/pop-os/cosmic-protocols//", rev = "c0cff4d" }
+cosmic-client-toolkit = { git = "https://github.com/pop-os/cosmic-protocols//", rev = "c0cff4d" }

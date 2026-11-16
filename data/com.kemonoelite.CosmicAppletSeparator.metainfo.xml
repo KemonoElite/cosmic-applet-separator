@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.kemonoelite.CosmicAppletSeparator</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  <project_group>COSMIC</project_group>
+  <name>COSMIC Separator Applet</name>
+  <summary>A macOS-style separator line for the COSMIC dock and panel</summary>
+  <description>
+    <p>Draws a thin divider between groups of items in the COSMIC dock or panel.</p>
+  </description>
+  <launchable type="desktop-id">com.kemonoelite.CosmicAppletSeparator.desktop</launchable>
+  <launchable type="desktop-id">com.kemonoelite.CosmicAppletSeparator2.desktop</launchable>
+  <launchable type="desktop-id">com.kemonoelite.CosmicAppletSeparator3.desktop</launchable>
+  <launchable type="desktop-id">com.kemonoelite.CosmicAppletSeparator4.desktop</launchable>
+  <launchable type="desktop-id">com.kemonoelite.CosmicAppletSeparator5.desktop</launchable>
+  <launchable type="desktop-id">com.kemonoelite.CosmicAppletSeparator6.desktop</launchable>
+  <provides>
+    <binaries>
+      <binary>cosmic-applet-separator</binary>
+    </binaries>
+  </provides>
+</component>

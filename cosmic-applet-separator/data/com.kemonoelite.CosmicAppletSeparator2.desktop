@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Separator 2
+Comment=Draw a thin divider between groups of items in the dock or panel
+Type=Application
+Exec=cosmic-applet-separator
+Terminal=false
+Categories=COSMIC;
+Keywords=COSMIC;Applet;Separator;Divider;Dock;Panel;
+Icon=com.kemonoelite.CosmicAppletSeparator-symbolic
+StartupNotify=true
+NoDisplay=true
+X-CosmicApplet=true
+X-HostWaylandDisplay=true
